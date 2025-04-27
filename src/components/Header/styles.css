@@ -8,10 +8,53 @@ header {
 
 header .logo {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 
 .logo img {
   max-width: 100%;
+}
+
+header nav {
+  position: relative;
+}
+
+nav .menu.desktop {
+  display: none;
+}
+
+nav .menu {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  top: 58px;
+}
+
+nav .menu li {
+  display: flex;
+  padding-bottom: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .hamburger {
+  display: block;
+}
+
+@media screen and (min-width: 680px) {
+  nav .menu {
+    display: none;
+    position: static;
+  }
+
+  nav .menu.desktop {
+    display: flex;
+  }
+
+  nav .hamburger {
+    display: none;
+  }
 }

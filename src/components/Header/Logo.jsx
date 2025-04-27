@@ -3,7 +3,7 @@ import './styles.css';
 
 const Logo = () => {
   return (
-    <a href="/" className="logo">
+    <a href="/portfolio" className="logo">
       <img src={logo} alt="logo" />
     </a>
   );
