@@ -1,16 +1,26 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Cormorant Garamond", serif;
 }
 
-body {
+body{
+  font-family: var(--primary-font);
+}
+
+*{ 
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App {
-  text-align: center;
+.flex {
+  display: flex;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
