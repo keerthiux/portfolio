@@ -1,9 +1,10 @@
-import './styles.module.css';
+import logo from '/src/assets/Logo_Web.svg';
+import './styles.css';
 
 const Logo = () => {
   return (
     <a href="/" className="logo">
-      <img src="/src/assets/Logo_Web.svg" alt="logo" />
+      <img src={logo} alt="logo" />
     </a>
   );
 };
