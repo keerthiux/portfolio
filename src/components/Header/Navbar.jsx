@@ -17,25 +17,25 @@ const Navbar = () => {
       {icon ? null : (
         <ul className="menu">
           <li>
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/">Portfolio</Link>
           </li>
           <li>
-            <Link to="/portfolio/about">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/portfolio/contact">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       )}
       <ul className="menu desktop">
         <li>
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/">Portfolio</Link>
         </li>
         <li>
-          <Link to="/portfolio/about">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/portfolio/contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>
