@@ -33,11 +33,11 @@ const Contact = () => {
     // Template parameters
     const templateParams = {
       from_name: `${firstName} ${lastName}`,
-      to_name: 'Sai',
+      to_name: 'Sai Keerthi',
       message,
       subject: 'New Enquiry',
       reply_to: email,
-      to_email: 'recipient@example.com',
+      from_email: 'vksaikeerthi@gmail.com',
     };
 
     // Send email using EmailJS
@@ -76,7 +76,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-form">
-        <form ref={formRef} onSubmit={handleSubmit}>
+        <form ref={formRef} onSubmit={handleSubmit} autocomplete="off">
           <div className="form-field first">
             <div className="form-field">
               <label htmlFor="firstName">
@@ -156,7 +156,7 @@ const Contact = () => {
           Having business acumen makes me more than a designer — it enables me
           to see the bigger picture and help your business grow.
         </p>
-        <a href="mailto:recipient@example.com">recipient@example.com</a>
+        <a href="mailto:vksaikeerthi@gmail.com">vksaikeerthi@gmail.com</a>
         <SocialIcons />
         <Button>Resume</Button>
       </div>
