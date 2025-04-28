@@ -50,6 +50,10 @@ nav .hamburger {
     position: static;
   }
 
+  nav .menu li {
+    padding: 0 21px;
+  }
+
   nav .menu.desktop {
     display: flex;
   }

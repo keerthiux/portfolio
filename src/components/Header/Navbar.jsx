@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import hamburger from '/src/assets/Menu.svg';
 import close from '/src/assets/Close.svg';
 
@@ -15,15 +16,27 @@ const Navbar = () => {
       />
       {icon ? null : (
         <ul className="menu">
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/portfolio/about">About</Link>
+          </li>
+          <li>
+            <Link to="/portfolio/contact">Contact</Link>
+          </li>
         </ul>
       )}
       <ul className="menu desktop">
-        <li>Portfolio</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link to="/portfolio">Portfolio</Link>
+        </li>
+        <li>
+          <Link to="/portfolio/about">About</Link>
+        </li>
+        <li>
+          <Link to="/portfolio/contact">Contact</Link>
+        </li>
       </ul>
     </nav>
   );

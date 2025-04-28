@@ -1,4 +1,4 @@
-import Button from '../Header/Button';
+import Button from '../Button/Button';
 import banner from '/src/assets/banner.jpg';
 import './Banner.css';
 
@@ -12,7 +12,7 @@ const Banner = () => {
           — a UX designer based in Hyderabad, I have 4+ years experience & I
           enjoy creating user-centric, delightful, and human experiences.
         </p>
-        <Button></Button>
+        <Button>Resume</Button>
       </section>
     </section>
   );

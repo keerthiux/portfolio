@@ -1,0 +1,12 @@
+.button {
+  background-color: white;
+  padding: 10px 22px;
+  border-radius: 10px 0px;
+  border: var(--stroke-weight-2, 2px) solid var(--Grey-Tints-950, #000);
+  color: var(--Grey-Tints-950, #000);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 15px; /* 171.429% */
+  letter-spacing: 0.022px;
+}
