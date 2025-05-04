@@ -25,10 +25,18 @@ a {
 input {
   height: 36px;
   padding: 10px;
+  outline: 0 !important;
 }
 
 textarea {
   resize: none;
+  padding: 10px;
+  outline: 0 !important;
+}
+
+input:focus,
+textarea:focus {
+  border-color: black !important;
 }
 
 .flex {
@@ -41,6 +49,11 @@ textarea {
 
 .justify-center {
   justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
 }
 
 /* footer */
@@ -67,4 +80,23 @@ footer p {
   letter-spacing: 0.048px;
   text-transform: capitalize;
   margin: 12px 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  footer a {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 14px;
+    margin: 16px 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }

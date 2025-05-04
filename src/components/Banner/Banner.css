@@ -1,7 +1,7 @@
 .banner {
   font-family: var(--secondary-font);
   font-weight: 400;
-  padding: 30px 16px;
+  padding: 30px 0;
 }
 
 .banner img {
@@ -23,10 +23,10 @@
   letter-spacing: 0.033px;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 1024px) {
   .banner {
     display: flex;
-    padding: 30px 60px;
+    padding: 30px 0;
   }
 
   .banner img {

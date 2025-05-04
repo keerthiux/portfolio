@@ -9,4 +9,19 @@
   font-size: 12px;
   line-height: 15px; /* 171.429% */
   letter-spacing: 0.022px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #000;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    padding: 16px 36px;
+    font-size: 14px;
+    border-radius: var(--radius-16, 16px) 0px;
+    border: var(--stroke-weight-2, 2px) solid var(--Grey-Tints-950, #000);
+  }
 }

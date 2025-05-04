@@ -75,90 +75,94 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <div className="contact-form">
-        <form ref={formRef} onSubmit={handleSubmit} autocomplete="off">
-          <div className="form-field first">
-            <div className="form-field">
-              <label htmlFor="firstName">
-                First Name<span>(required)</span>
-              </label>
-              <input
-                id="firstName"
-                required
-                type="text"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                minLength="2"
-                pattern="[A-Za-z]+"
-                title="Please enter a valid first name (letters only)"
-              />
-            </div>
-            <div className="form-field">
-              <label htmlFor="lastName">
-                Last Name<span>(required)</span>
-              </label>
-              <input
-                id="lastName"
-                required
-                type="text"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-                minLength="2"
-                pattern="[A-Za-z]+"
-                title="Please enter a valid last name (letters only)"
-              />
-            </div>
-          </div>
-          <div className="form-field">
-            <label htmlFor="email">
-              Email ID<span>(required)</span>
-            </label>
-            <input
-              id="email"
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              title="Please enter a valid email address"
-            />
-          </div>
-          <div className="form-field">
-            <label htmlFor="message">
-              Message<span>(required)</span>
-            </label>
-            <textarea
-              id="message"
-              required
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              minLength="10"
-              title="Please enter a message (minimum 10 characters)"
-            />
-          </div>
-          <div className="form-field">
-            <Button type="submit" disabled={isSubmitting}>
-              {isSubmitting ? 'Sending...' : 'Send Email'}
-            </Button>
-
-            {submitStatus && (
-              <div
-                className={`submit-status ${submitStatus.success ? 'success' : 'error'}`}
-              >
-                {submitStatus.message}
+      <div className="container">
+        <div className="contact-content-main">
+          <div className="contact-form">
+            <form ref={formRef} onSubmit={handleSubmit} autocomplete="off">
+              <div className="form-field first">
+                <div className="form-field">
+                  <label htmlFor="firstName">
+                    First Name<span>(required)</span>
+                  </label>
+                  <input
+                    id="firstName"
+                    required
+                    type="text"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    minLength="2"
+                    pattern="[A-Za-z]+"
+                    title="Please enter a valid first name (letters only)"
+                  />
+                </div>
+                <div className="form-field">
+                  <label htmlFor="lastName">
+                    Last Name<span>(required)</span>
+                  </label>
+                  <input
+                    id="lastName"
+                    required
+                    type="text"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    minLength="2"
+                    pattern="[A-Za-z]+"
+                    title="Please enter a valid last name (letters only)"
+                  />
+                </div>
               </div>
-            )}
+              <div className="form-field">
+                <label htmlFor="email">
+                  Email ID<span>(required)</span>
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  title="Please enter a valid email address"
+                />
+              </div>
+              <div className="form-field">
+                <label htmlFor="message">
+                  Message<span>(required)</span>
+                </label>
+                <textarea
+                  id="message"
+                  required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  minLength="10"
+                  title="Please enter a message (minimum 10 characters)"
+                />
+              </div>
+              <div className="form-field">
+                <Button type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending...' : 'Send Email'}
+                </Button>
+
+                {submitStatus && (
+                  <div
+                    className={`submit-status ${submitStatus.success ? 'success' : 'error'}`}
+                  >
+                    {submitStatus.message}
+                  </div>
+                )}
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
-      <div className="contact-content">
-        <h1>Let's Connect</h1>
-        <p>
-          Having business acumen makes me more than a designer — it enables me
-          to see the bigger picture and help your business grow.
-        </p>
-        <a href="mailto:vksaikeerthi@gmail.com">vksaikeerthi@gmail.com</a>
-        <SocialIcons />
-        <Button>Resume</Button>
+          <div className="contact-content">
+            <h1>Let's Connect</h1>
+            <p>
+              Having business acumen makes me more than a designer — it enables
+              me to see the bigger picture and help your business grow.
+            </p>
+            <a href="mailto:vksaikeerthi@gmail.com">vksaikeerthi@gmail.com</a>
+            <SocialIcons />
+            <Button>Resume</Button>
+          </div>
+        </div>
       </div>
     </div>
   );

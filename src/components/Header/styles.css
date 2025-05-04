@@ -44,7 +44,7 @@ nav .hamburger {
   display: block;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 1024px) {
   nav .menu {
     display: none;
     position: static;
@@ -56,6 +56,16 @@ nav .hamburger {
 
   nav .menu.desktop {
     display: flex;
+  }
+
+  nav .menu.desktop a {
+    margin-top: 2px;
+    border-bottom: 2px solid white;
+  }
+
+  nav .menu.desktop a:hover,
+  nav .menu.desktop a.active {
+    border-bottom-color: black;
   }
 
   nav .hamburger {
