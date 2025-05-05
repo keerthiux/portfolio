@@ -32,24 +32,24 @@ header nav {
   position: relative;
 }
 
-nav .menu.desktop {
-  display: none;
-}
-
 nav .menu {
   position: fixed;
-  background-color: white;
-  width: 100%;
-  left: 0;
+  background-color: #fff;
+  width: 80%;
   top: 58px;
+  right: -1000px;
+  height: 100vh;
+  transition: all 0.3s;
+}
+
+nav .menu.active {
+  right: 0;
+  transition: all 0.3s;
 }
 
 nav .menu li {
-  display: flex;
-  padding-bottom: 4px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  text-align: center;
+  margin: 20px 0;
 }
 
 nav .hamburger {
@@ -63,29 +63,34 @@ nav .hamburger {
   }
 
   nav .menu {
-    display: none;
     position: static;
+    height: inherit;
   }
 
   nav .menu li {
-    padding: 0 20px;
+    padding: 0 20px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
   }
 
   nav .menu li:last-child {
     padding-right: 0;
   }
 
-  nav .menu.desktop {
+  nav .menu {
     display: flex;
   }
 
-  nav .menu.desktop a {
+  nav .menu a {
     margin-top: 2px;
     border-bottom: 2px solid white;
   }
 
-  nav .menu.desktop a:hover,
-  nav .menu.desktop a.active {
+  nav .menu a:hover,
+  nav .menu a.active {
     border-bottom-color: black;
   }
 

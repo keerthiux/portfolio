@@ -7,6 +7,10 @@ body {
   font-family: var(--primary-font);
 }
 
+body.no-scroll {
+  overflow-y: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -309,10 +309,7 @@
 
   .case img {
     width: 800px;
-    /* position: absolute;
-    left: 0;
-    top: 0; */
-    max-width: 100%;
+    max-width: 50%;
   }
 
   .case .text {

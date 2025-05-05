@@ -78,7 +78,7 @@ const Contact = () => {
       <div className="container">
         <div className="contact-content-main">
           <div className="contact-form">
-            <form ref={formRef} onSubmit={handleSubmit} autocomplete="off">
+            <form ref={formRef} onSubmit={handleSubmit} autoComplete="off">
               <div className="form-field first">
                 <div className="form-field">
                   <label htmlFor="firstName">
