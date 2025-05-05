@@ -86,6 +86,14 @@
   display: block;
 }
 
+.testimonial img {
+  width: 126px;
+  height: 126px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 1024px) {
   .contact {
     padding: 60px 0;
@@ -138,5 +146,45 @@
 
   .social-icons {
     padding: 40px 0;
+  }
+
+  .case {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .case img {
+    width: 800px;
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    max-width: 100%;
+  }
+
+  .case .text {
+    margin-right: 120px;
+  }
+
+  .testimonials {
+    padding: 40px 0 80px;
+  }
+
+  .testimonials .testimonial-content {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .testimonial-content p,
+  .testimonial-content span {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .testimonial-content p {
+    margin: 10px 0 16px;
+    max-width: 320px;
   }
 }

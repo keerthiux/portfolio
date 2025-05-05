@@ -24,16 +24,31 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .banner {
+  .banner .banner-content {
     display: flex;
-    padding: 30px 0;
+    padding: 40px 0;
+    margin: 60px 0;
+  }
+
+  .banner h1 {
+    font-size: 47px;
+    line-height: 48px;
+  }
+
+  .banner p {
+    font-size: 47px;
+    line-height: 48px;
+    margin: 42px 0;
   }
 
   .banner img {
     order: 1;
+    margin: 0;
+    max-width: 320px;
   }
 
   .banner .banner-text {
     order: 0;
+    max-width: 935px;
   }
 }

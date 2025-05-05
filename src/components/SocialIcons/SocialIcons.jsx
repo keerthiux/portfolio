@@ -1,6 +1,6 @@
 import React from 'react';
-import insta from '/src/assets/Instagram icon.svg';
-import linked from '/src/assets/Linkedin Icon.svg';
+import insta from '/src/assets/icons/Instagram icon.svg';
+import linked from '/src/assets/icons/Linkedin Icon.svg';
 
 const SocialIcons = () => {
   return (

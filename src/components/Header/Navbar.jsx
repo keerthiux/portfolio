@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import hamburger from '/src/assets/Menu.svg';
-import close from '/src/assets/Close.svg';
+import hamburger from '/src/assets/icons/Menu.svg';
+import close from '/src/assets/icons/Close.svg';
 
 const Navbar = () => {
   const [icon, setIcon] = useState(true);
