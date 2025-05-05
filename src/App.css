@@ -153,6 +153,7 @@
     display: flex;
     align-items: center;
     gap: 80px;
+    padding: 80px 0;
   }
 
   .case img {
@@ -166,6 +167,30 @@
   .case .text {
     margin-right: 120px;
   }
+
+  .case .text h5 {
+    color: var(--color-black-solid, #000);
+
+    /* S-Title */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 28px */
+    letter-spacing: 2.8px;
+  }
+
+  .case .text h2 {
+    color: var(--color-black-solid, #000);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 60px */
+    letter-spacing: 0.8px;
+    margin-bottom: 24px;
+  }
+
+  /* home testimonials */
 
   .testimonials {
     padding: 40px 0 80px;
@@ -186,5 +211,120 @@
   .testimonial-content p {
     margin: 10px 0 16px;
     max-width: 320px;
+  }
+
+  /* about styles */
+
+  .about .abt-banner {
+    display: flex;
+    gap: 60px;
+    padding: 80px 0;
+  }
+
+  .abt-banner h1 {
+    color: var(--color-black-solid, #000);
+    font-family: var(--font-family-Font-1, 'Cormorant Garamond');
+    font-size: 47.1px;
+    font-style: normal;
+    font-weight: var(--font-weight-500, 500);
+    line-height: var(--line-height-61_2, 61.2px); /* 129.936% */
+  }
+
+  .abt-banner b {
+    color: var(--color-black-solid, #000);
+
+    /* Body 2/Reg */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+  }
+
+  .abt-banner p {
+    color: var(--color-black-solid, #000);
+
+    /* Body 2/Reg */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 170% */
+    margin: 24px 0 0;
+  }
+
+  .abt-banner button:last-child {
+    margin-top: 24px;
+  }
+
+  .about .adv-map {
+    padding: 80px 0;
+  }
+
+  .adv-map h2 {
+    color: var(--color-black-solid, #000);
+
+    /* Headline 4/Reg */
+    font-family: 'Cormorant Garamond';
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 102.128% */
+    letter-spacing: 0.118px;
+  }
+
+  .adv-map img {
+    display: block;
+    max-width: 100%;
+    margin: 80px 0;
+  }
+
+  .adv-map p {
+    color: var(--color-black-solid, #000);
+
+    /* Body 2/Reg */
+    font-family: Inter;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 170% */
+  }
+
+  .adv-map p span {
+    color: var(--color-black-solid, #000);
+    text-align: center;
+
+    /* Headline 6 */
+    font-family: 'Cormorant Garamond';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 100% */
+    letter-spacing: 0.042px;
+  }
+
+  .about .abt-testimonials {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+  }
+
+  .abt-testimonials img {
+    margin-bottom: 40px;
+  }
+
+  .abt-testimonials p {
+    color: var(--color-black-solid, #000);
+    text-align: center;
+    font-family: var(--font-family-Font-2, Inter);
+    font-size: 14px;
+    margin: 0;
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-28_8, 26px); /* 217.358% */
   }
 }
