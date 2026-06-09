@@ -97,4 +97,9 @@ nav .hamburger {
   nav .hamburger {
     display: none;
   }
+
+  header .logo {
+    width: 64px;
+    height: 58px;
+  }
 }

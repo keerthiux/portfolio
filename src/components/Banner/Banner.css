@@ -42,14 +42,12 @@
     margin: 42px 0;
   }
 
-  .banner img {
-    order: 1;
+  .banner .banner-img {
     margin: 0;
     max-width: 320px;
   }
 
   .banner .banner-text {
-    order: 0;
     max-width: 935px;
   }
 }
