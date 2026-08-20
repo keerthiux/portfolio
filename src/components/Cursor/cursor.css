@@ -1,46 +1,22 @@
-body.cursor-active,
+body.cursor-active {
+  cursor: none;
+}
+
 body.cursor-active a,
 body.cursor-active button,
 body.cursor-active .button {
   cursor: none;
 }
 
-.cursor-dot,
-.cursor-star {
+.cursor-canvas {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0;
-}
-
-body.cursor-visible .cursor-dot {
-  opacity: 1;
-}
-
-.cursor-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--text);
-  box-shadow: 0 0 12px 2px rgba(182, 166, 255, 0.6);
-  transform: translate(-50%, -50%);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cursor-dot.is-hovering {
-  background: var(--accent);
-  box-shadow: 0 0 18px 4px rgba(124, 92, 255, 0.7);
-}
-
-.cursor-star {
-  filter: drop-shadow(0 0 4px currentColor);
 }
 
 @media (pointer: coarse) {
-  .cursor-dot,
-  .cursor-star {
+  .cursor-canvas {
     display: none;
   }
 }
