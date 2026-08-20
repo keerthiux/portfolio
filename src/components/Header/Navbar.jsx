@@ -1,80 +1,63 @@
-import { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import hamburger from '/src/assets/icons/Menu.svg';
-import close from '/src/assets/icons/Close.svg';
+import { useState, useRef, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
+const links = [
+  { to: '/', label: 'Work' },
+  { to: '/about', label: 'About' },
+  { to: '/contact', label: 'Contact' },
+];
 
 const Navbar = () => {
-  const [icon, setIcon] = useState(true);
-  const [currentActive, setCurrentActive] = useState(
-    localStorage.getItem('activeTab') || 'Portfolio',
-  );
+  const [open, setOpen] = useState(false);
   const boxRef = useRef(null);
+  const location = useLocation();
 
-  const handleLinkClick = (e) => {
-    if (boxRef.current) {
-      boxRef.current.classList.remove('active');
-      setIcon(true);
-      localStorage.setItem('activeTab', e.target.innerText);
-      setCurrentActive(e.target.innerText);
-      document.body.classList.remove('no-scroll');
-    }
+  useEffect(() => {
+    setOpen(false);
+    document.body.classList.remove('no-scroll');
+  }, [location.pathname]);
+
+  const toggle = () => {
+    setOpen((prev) => {
+      const next = !prev;
+      document.body.classList.toggle('no-scroll', next);
+      return next;
+    });
   };
 
   return (
     <nav>
-      <img
-        className="hamburger"
-        onClick={() => {
-          setIcon((prev) => !prev);
-          if (icon) {
-            document.body.classList.add('no-scroll');
-          } else {
-            document.body.classList.remove('no-scroll');
-          }
-        }}
-        src={icon ? hamburger : close}
-        alt="hamburger"
-      />
-      <ul ref={boxRef} className={`menu ${icon ? '' : 'active'}`}>
-        <li>
-          <Link
-            to="/"
-            className={currentActive === 'Portfolio' ? 'active' : ''}
-            onClick={handleLinkClick}
+      <button
+        className={`hamburger ${open ? 'active' : ''}`}
+        onClick={toggle}
+        aria-label="Toggle navigation"
+        aria-expanded={open}
+      >
+        <span />
+        <span />
+      </button>
+      <ul ref={boxRef} className={`menu ${open ? 'active' : ''}`}>
+        {links.map((link) => (
+          <li key={link.to}>
+            <Link
+              to={link.to}
+              className={location.pathname === link.to ? 'active' : ''}
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+        <li className="menu-cta">
+          <a
+            href="https://wa.me/919618670515?text=Hi%20Keerthi%2C%20I%27d%20like%20to%20get%20in%20touch!"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="menu-cta-link"
           >
-            Portfolio
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/about"
-            className={currentActive === 'About' ? 'active' : ''}
-            onClick={handleLinkClick}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            className={currentActive === 'Contact' ? 'active' : ''}
-            onClick={handleLinkClick}
-          >
-            Contact
-          </Link>
+            Say hello
+          </a>
         </li>
       </ul>
-      {/* <ul className="menu desktop">
-        <li>
-          <Link to="/">Portfolio</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul> */}
     </nav>
   );
 };

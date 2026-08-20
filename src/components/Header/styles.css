@@ -1,11 +1,19 @@
 header {
-  min-height: 58px;
   position: sticky;
   top: 0;
   left: 0;
-  background-color: #fff;
-  padding: 16px 0;
   z-index: 99;
+  padding: 18px 0;
+  background: rgba(7, 7, 11, 0.55);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+
+header.scrolled {
+  border-bottom-color: var(--border);
+  background: rgba(7, 7, 11, 0.78);
 }
 
 header .container {
@@ -14,92 +22,168 @@ header .container {
   justify-content: space-between;
 }
 
-header.scrolled {
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
-}
-
 header .logo {
-  display: block;
-  width: 32px;
-  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo img {
-  max-width: 100%;
+header .logo svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-strong);
 }
 
 header nav {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+nav .hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+nav .hamburger span {
+  display: block;
+  width: 14px;
+  height: 1.5px;
+  background: var(--text);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+nav .hamburger.active span:first-child {
+  transform: translateY(3.25px) rotate(45deg);
+}
+nav .hamburger.active span:last-child {
+  transform: translateY(-3.25px) rotate(-45deg);
 }
 
 nav .menu {
   position: fixed;
-  background-color: #fff;
-  width: 80%;
-  top: 58px;
-  right: -1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  background: rgba(7, 7, 11, 0.98);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  top: 0;
+  right: -100%;
   height: 100vh;
-  transition: all 0.3s;
+  transition: right 0.45s var(--ease);
+  text-align: center;
+  visibility: hidden;
 }
 
 nav .menu.active {
   right: 0;
-  transition: all 0.3s;
+  visibility: visible;
 }
 
-nav .menu li {
-  text-align: center;
-  margin: 20px 0;
+nav .menu li a {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
 }
 
-nav .hamburger {
-  display: block;
+nav .menu li a.active,
+nav .menu li a:hover {
+  color: var(--text);
 }
 
-@media screen and (min-width: 1024px) {
+nav .menu-cta {
+  margin-top: 12px;
+}
+
+nav .menu-cta-link {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  font-size: 14px;
+}
+
+@media screen and (min-width: 900px) {
   header {
-    padding: 40px 0;
-    margin: 0 auto;
-  }
-
-  nav .menu {
-    position: static;
-    height: inherit;
-  }
-
-  nav .menu li {
-    padding: 0 20px 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-  }
-
-  nav .menu li:last-child {
-    padding-right: 0;
-  }
-
-  nav .menu {
-    display: flex;
-  }
-
-  nav .menu a {
-    margin-top: 2px;
-    border-bottom: 2px solid white;
-  }
-
-  nav .menu a:hover,
-  nav .menu a.active {
-    border-bottom-color: black;
+    padding: 20px 0;
   }
 
   nav .hamburger {
     display: none;
   }
 
-  header .logo {
-    width: 64px;
-    height: 58px;
+  nav .menu {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    padding: 6px;
+    right: 0;
+    visibility: visible;
+  }
+
+  nav .menu li a {
+    display: block;
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: var(--radius-pill);
+    color: var(--text);
+    transition: color 0.3s ease, background 0.3s ease;
+  }
+
+  nav .menu li a:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  nav .menu li a.active {
+    color: #0a0a10;
+    background: var(--text);
+  }
+
+  nav .menu-cta {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  nav .menu-cta-link {
+    padding: 9px 20px;
+    font-size: 13px;
+    background: transparent;
+  }
+
+  nav .menu-cta-link:hover {
+    border-color: var(--accent);
   }
 }

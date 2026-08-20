@@ -1,74 +1,175 @@
 import banner from '/src/assets/images/abt_banner.jpg';
-import adv_map from '/src/assets/images/ux_adventure.png';
-import test1 from '/src/assets/images/abt-test1.jpg';
-import test2 from '/src/assets/images/abt-test2.jpg';
-import test3 from '/src/assets/images/abt-test3.jpg';
 import Button from '../components/Button/Button';
+import Reveal from '../components/Reveal/Reveal';
+import './About.css';
+
+const experience = [
+  {
+    role: 'Senior Software Engineer (Product Design)',
+    company: 'Infovision Labs · Digital API, Verizon',
+    period: 'May 2025 — Present',
+    points: [
+      'Shape design and product decisions for enterprise dashboard applications, driving visual style, layout and interaction flows end-to-end.',
+      'Produce conceptual diagrams, wireframes and interactive prototypes to align stakeholders ahead of build.',
+      'Own design discussions and final UI handoff, embedding usability best practices at every stage of delivery.',
+    ],
+  },
+  {
+    role: 'Associate — UX/UI Designer',
+    company: 'PurpleTalk India · Godrej Agrovet, Billing Management System, Culture of Fit',
+    period: 'Nov 2023 — Jan 2025',
+    points: [
+      'Ran 30+ user interviews and moderated usability tests, actioning feedback to continuously refine deliverables.',
+      'Built and maintained a design system with 100+ reusable components, including detailed specs and patterns.',
+      'Delivered projects at a 95% on-time success rate, managing cross-team communication required to ship.',
+    ],
+  },
+  {
+    role: 'Software Engineer — UX Designer',
+    company: 'Wavelabs Technologies (50K SAAS Ventures) · Cooper, Presence Sleep',
+    period: 'Sep 2022 — Jul 2023',
+    points: [
+      'Designed 20+ wireframes and 10+ prototypes, plus full UX documentation across navigational and task flows.',
+      'Formulated and tested hypotheses through design iterations, improving adoption via evidence-based decisions.',
+      'Led 5+ UX knowledge-sharing sessions across teams, championing best practices org-wide.',
+    ],
+  },
+  {
+    role: 'UX Designer',
+    company: 'Orennow · The Sustainability Hub',
+    period: 'Dec 2021 — Aug 2022',
+    points: [
+      'Defined UX strategy and designed 5+ end-to-end task flows, reducing onboarding time by 20%.',
+      'Created a reusable style guide with 50+ components and maintained detailed UX specifications.',
+      'Owned design decisions independently across geographical and cross-functional boundaries.',
+    ],
+  },
+];
+
+const skillGroups = [
+  {
+    title: 'Design & Systems',
+    items: ['Design Systems', 'Material UI', 'UI Design', 'Design Principles', 'UX Documentation'],
+  },
+  {
+    title: 'Tools',
+    items: ['Figma', 'Adobe XD', 'Illustrator', 'Sketch', 'InVision', 'Axure RP', 'Zeplin', 'Framer'],
+  },
+  {
+    title: 'Research',
+    items: ['User Interviews', 'Moderated & Unmoderated Testing', 'Heuristic Reviews', 'UCD'],
+  },
+  {
+    title: 'Delivery',
+    items: ['Wireframing', 'Prototyping', 'Information Architecture', 'Responsive Design', 'WCAG Accessibility'],
+  },
+];
+
+const education = [
+  { degree: 'Master of Business Administration', school: 'Lovely Professional University, Jalandhar', period: '2017 — 2019' },
+  { degree: 'B.Com (Computer Applications)', school: 'St. Joseph Degree College, Kurnool', period: '2013 — 2016' },
+];
 
 const About = () => {
   return (
     <section className="about">
-      <div className="container">
-        <section className="abt-banner">
-          <img src={banner} alt="" />
-          <div className="abt-banner-content">
-            <h1>Nice to meet you! I’m Keerthi</h1>
-            <p>
-              I’m a UX designer based in India, I graduated from Lovely
-              Professional University with an M.B.A in Marketing & Human
-              Resource Management, then I studied User Experience Design from{' '}
-              <b>Human Factors Interaction</b>.
-            </p>
-            <p>
-              My design process is shaped by my multicultural background and
-              passion for problem-solving. Living and studying in different
-              locations has made me a versatile thinker, blending creative and
-              strategic perspectives. This adaptability allows me to craft
-              solutions that meet the dynamic and hybrid marketing needs of the
-              Indian market.
-            </p>
-            <p>
-              Outside of work, I’m a movie lover, an avid explorer of new food
-              spots, and a forever learner, always curious about new trends in
-              design and technology.
-            </p>
-            <Button>Resume</Button>
-          </div>
-        </section>
-        <section className="adv-map">
-          <h2>— My UX Designer Adventure Map</h2>
-          <img src={adv_map} alt="" />
+      <div className="container abt-banner">
+        <Reveal type="up" className="abt-banner-content">
+          <span className="eyebrow">About</span>
+          <h1>
+            Nice to meet you — I'm{' '}
+            <span className="gradient-word">Keerthi</span>.
+          </h1>
           <p>
-            I believe in{' '}
-            <span>
-              "The best journeys are invisible. The best designs feel natural."
-            </span>{' '}
+            I'm a Senior Product Designer based in Hyderabad with 5+ years
+            designing enterprise SaaS, dashboard and billing platforms
+            end-to-end — from research and UX strategy through design
+            systems, prototyping and dev handoff. I'm{' '}
+            <b>HFI-trained and CUA Certified</b>.
           </p>
-        </section>
-        <section className="fun-facts"></section>
-        <section className="abt-testimonials">
-          <div className="abt-testimonial">
-            <img src={test1} alt="" />
-            <p>
-              I started my own online business when I was in school, and made my
-              first 5-digit revenue in a month.
-            </p>
+          <p>
+            My process is grounded in research: moderated and unmoderated
+            testing, heuristic reviews, and translating complex business
+            rules into clear, accessible (WCAG) UX systems — while building
+            and scaling reusable component libraries that teams actually use.
+          </p>
+          <p>
+            I'm comfortable operating in Agile/Scrum teams, presenting design
+            rationale to stakeholders, and owning delivery independently
+            across geographies.
+          </p>
+          <Button href="/resume.pdf" download="Sai_Keerthi_Resume.pdf">
+            Download résumé
+          </Button>
+        </Reveal>
+        <Reveal type="scale" delay={0.15} className="abt-banner-media">
+          <img src={banner} alt="Sai Keerthi" />
+        </Reveal>
+      </div>
+
+      <div className="section">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Experience</span>
+            <h2>Five years, four teams, one obsession with usable design.</h2>
           </div>
-          <div className="abt-testimonial">
-            <img src={test2} alt="" />
-            <p>
-              Our family owns one of the most popular catteries in DC area. This
-              is where my interest in UX stemmed from.
-            </p>
+          <div className="timeline">
+            {experience.map((job, i) => (
+              <Reveal type="up" delay={i * 0.08} key={job.role} className="timeline-item">
+                <div className="timeline-marker" />
+                <div className="timeline-content">
+                  <span className="timeline-period">{job.period}</span>
+                  <h3>{job.role}</h3>
+                  <p className="timeline-company">{job.company}</p>
+                  <ul>
+                    {job.points.map((pt) => (
+                      <li key={pt}>{pt}</li>
+                    ))}
+                  </ul>
+                </div>
+              </Reveal>
+            ))}
           </div>
-          <div className="abt-testimonial">
-            <img src={test3} alt="" />
-            <p>
-              I found my passion in aesthetics as a child. I’ve been a Vogue and
-              AD subscriber since I was 11.
-            </p>
+        </div>
+      </div>
+
+      <div className="section skills-section">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Core skills</span>
+            <h2>The toolkit behind every project.</h2>
           </div>
-        </section>
+          <div className="skills-grid">
+            {skillGroups.map((group, i) => (
+              <Reveal type="up" delay={i * 0.08} key={group.title} className="skill-card">
+                <h3>{group.title}</h3>
+                <div className="skill-tags">
+                  {group.items.map((item) => (
+                    <span key={item}>{item}</span>
+                  ))}
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="section education-section">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Education</span>
+            <h2>Foundations.</h2>
+          </div>
+          <div className="education-grid">
+            {education.map((ed, i) => (
+              <Reveal type="up" delay={i * 0.08} key={ed.degree} className="education-card">
+                <h3>{ed.degree}</h3>
+                <p>{ed.school}</p>
+                <span>{ed.period}</span>
+              </Reveal>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

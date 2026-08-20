@@ -1,0 +1,353 @@
+.cs-narrow {
+  max-width: 860px;
+}
+
+/* hero */
+.cs-hero {
+  padding: 64px 0 0;
+}
+
+.cs-hero-intro {
+  max-width: 720px;
+}
+
+.cs-hero-intro h1 {
+  font-size: clamp(30px, 6vw, 52px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 16px 0 20px;
+}
+
+.cs-hero-intro p {
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.cs-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  margin: 40px 0;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.cs-meta-card {
+  background: var(--bg);
+  padding: 22px 24px;
+}
+
+.cs-meta-card span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+
+.cs-meta-card p {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.cs-hero-media {
+  margin: 0 0 40px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.cs-hero-media img {
+  width: 100%;
+  display: block;
+}
+
+/* generic section */
+.cs-section {
+  position: relative;
+}
+
+.cs-alt {
+  background: var(--bg-elevated);
+}
+
+/* problem list */
+.cs-problem-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.cs-problem-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.cs-problem-row span {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(255, 138, 138, 0.15);
+  color: #ffb3b3;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* approach */
+.cs-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cs-approach-card {
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.cs-approach-index {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.cs-approach-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.cs-approach-card p {
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* pillars */
+.cs-pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cs-pillar-card {
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.cs-pillar-icon {
+  font-size: 22px;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.cs-pillar-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.cs-pillar-card p {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.65;
+}
+
+/* gallery */
+.cs-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.cs-gallery-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  transition: border-color 0.4s ease, transform 0.4s ease;
+}
+
+.cs-gallery-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-4px);
+}
+
+.cs-gallery-card img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+.cs-gallery-caption {
+  padding: 18px 20px 20px;
+}
+
+.cs-gallery-caption h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.cs-gallery-caption p {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+/* process */
+.cs-process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cs-process-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+.cs-process-row:first-child {
+  border-top: none;
+}
+
+.cs-process-dot {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 8px;
+}
+
+/* outcomes */
+.cs-outcomes {
+  background: radial-gradient(circle at 50% 0%, rgba(124, 92, 255, 0.16), transparent 60%), var(--bg-elevated);
+}
+
+.cs-outcomes-head {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cs-outcome-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cs-outcome-card {
+  padding: 26px 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  text-align: center;
+  background: var(--bg-card);
+}
+
+.cs-outcome-card h3 {
+  font-size: 26px;
+  font-weight: 600;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cs-outcome-card p {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.cs-note {
+  margin: 32px auto 0;
+  max-width: 640px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-faint);
+  line-height: 1.7;
+}
+
+/* cta */
+.cs-cta {
+  padding-bottom: 40px;
+}
+
+.cs-cta-card {
+  text-align: center;
+  padding: 72px 32px !important;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.cs-cta-card h2 {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.cs-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 900px) {
+  .cs-meta-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cs-approach-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cs-pillar-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cs-outcome-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cs-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

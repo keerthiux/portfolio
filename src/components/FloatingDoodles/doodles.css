@@ -1,0 +1,41 @@
+.doodles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.doodle {
+  position: absolute;
+  display: inline-block;
+  font-size: 22px;
+  opacity: 0.5;
+  filter: drop-shadow(0 0 10px rgba(182, 166, 255, 0.35));
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.doodles-hero .doodle-0 { top: 10%; left: 6%; font-size: 20px; }
+.doodles-hero .doodle-1 { top: 20%; right: 8%; font-size: 26px; }
+.doodles-hero .doodle-2 { bottom: 24%; left: 12%; font-size: 18px; }
+.doodles-hero .doodle-3 { bottom: 12%; right: 14%; font-size: 24px; }
+
+.doodles-career .doodle-0 { top: 8%; right: 6%; font-size: 24px; }
+.doodles-career .doodle-1 { top: 40%; left: 4%; font-size: 20px; }
+.doodles-career .doodle-2 { bottom: 16%; right: 12%; font-size: 22px; }
+.doodles-career .doodle-3 { bottom: 6%; left: 10%; font-size: 18px; }
+
+.doodles-cta .doodle-0 { top: 14%; left: 14%; font-size: 24px; }
+.doodles-cta .doodle-1 { top: 16%; right: 14%; font-size: 20px; }
+.doodles-cta .doodle-2 { bottom: 16%; left: 48%; font-size: 22px; }
+
+@media screen and (max-width: 640px) {
+  .doodle {
+    display: none;
+  }
+  .doodles-hero .doodle-0,
+  .doodles-hero .doodle-1 {
+    display: inline-block;
+  }
+}

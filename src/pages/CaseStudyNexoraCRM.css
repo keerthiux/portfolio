@@ -1,0 +1,462 @@
+.cs-narrow {
+  max-width: 860px;
+}
+
+/* hero */
+.cs-hero {
+  padding: 64px 0 0;
+}
+
+.cs-hero-intro {
+  max-width: 720px;
+}
+
+.cs-hero-intro h1 {
+  font-size: clamp(30px, 6vw, 52px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 16px 0 20px;
+}
+
+.cs-hero-intro p {
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.cs-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  margin: 40px 0;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.cs-meta-card {
+  background: var(--bg);
+  padding: 22px 24px;
+}
+
+.cs-meta-card span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+
+.cs-meta-card p {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.cs-hero-media {
+  margin: 0 0 40px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.cs-hero-media img {
+  width: 100%;
+  display: block;
+}
+
+/* generic section */
+.cs-section {
+  position: relative;
+}
+
+.cs-alt {
+  background: var(--bg-elevated);
+}
+
+.cs-media-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+.cs-media-card img {
+  width: 100%;
+  display: block;
+}
+
+.cs-media-narrow {
+  max-width: 480px;
+}
+
+.cs-callout {
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  background: rgba(182, 166, 255, 0.07);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.cs-callout strong {
+  color: var(--accent);
+}
+
+/* problem list */
+.cs-problem-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.cs-problem-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.cs-problem-row span {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(255, 138, 138, 0.15);
+  color: #ffb3b3;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* compare */
+.cs-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cs-compare-card {
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.cs-compare-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.cs-compare-card h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.cs-compare-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cs-compare-card li {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  padding-left: 14px;
+  position: relative;
+}
+
+.cs-compare-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.cs-compare-bad {
+  background: rgba(255, 138, 138, 0.06);
+}
+.cs-compare-bad .cs-compare-tag {
+  color: #ff9d9d;
+}
+.cs-compare-bad li {
+  color: var(--text-dim);
+}
+
+.cs-compare-good {
+  background: rgba(108, 214, 160, 0.07);
+}
+.cs-compare-good .cs-compare-tag {
+  color: #8ce3b0;
+}
+
+/* pillars */
+.cs-pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cs-pillar-card {
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.cs-pillar-icon {
+  font-size: 22px;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.cs-pillar-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.cs-pillar-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cs-pillar-card li {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  padding-left: 14px;
+  position: relative;
+}
+
+.cs-pillar-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* onboarding */
+.cs-onboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cs-onboard-card {
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.cs-onboard-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(124, 92, 255, 0.15);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.cs-onboard-card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.cs-onboard-card p {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+/* pricing */
+.cs-pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cs-price-card {
+  padding: 28px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  text-align: center;
+  position: relative;
+}
+
+.cs-price-highlight {
+  border-color: var(--border-strong);
+  background: linear-gradient(160deg, rgba(124, 92, 255, 0.14), transparent), var(--bg-card);
+}
+
+.cs-price-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-2);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.cs-price-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dim);
+  margin-bottom: 14px;
+}
+
+.cs-price-value {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cs-price-value span {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-faint);
+  margin-left: 4px;
+}
+
+.cs-price-seats {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+/* outcomes */
+.cs-outcomes {
+  background: radial-gradient(circle at 50% 0%, rgba(124, 92, 255, 0.16), transparent 60%), var(--bg-elevated);
+}
+
+.cs-outcomes-head {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cs-outcome-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cs-outcome-card {
+  padding: 26px 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  text-align: center;
+  background: var(--bg-card);
+}
+
+.cs-outcome-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cs-outcome-card p {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+/* cta */
+.cs-cta {
+  padding-bottom: 40px;
+}
+
+.cs-cta-card {
+  text-align: center;
+  padding: 72px 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.cs-cta-card h2 {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.cs-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 900px) {
+  .cs-meta-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cs-compare-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-pillar-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cs-onboard-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cs-pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cs-outcome-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

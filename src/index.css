@@ -1,14 +1,29 @@
 :root {
   --primary-font: 'Inter', sans-serif;
-  --secondary-font: 'Cormorant Garamond', serif;
-}
+  --accent-font: 'Instrument Serif', serif;
 
-body {
-  font-family: var(--primary-font);
-}
+  --bg: #07070b;
+  --bg-elevated: #0d0d15;
+  --bg-card: rgba(255, 255, 255, 0.035);
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.18);
 
-body.no-scroll {
-  overflow-y: hidden;
+  --text: #f3f2f8;
+  --text-dim: #9d9ca9;
+  --text-faint: #6d6c78;
+
+  --accent: #b6a6ff;
+  --accent-2: #7c5cff;
+  --accent-warm: #ffb088;
+  --gradient-text: linear-gradient(120deg, #fff 0%, #cfc7ff 45%, #ffb088 100%);
+
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --container: 1180px;
 }
 
 * {
@@ -17,91 +32,172 @@ body.no-scroll {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+}
+
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-black-solid, #000);
+  color: inherit;
 }
 
-input {
-  height: 36px;
-  padding: 10px;
-  outline: 0 !important;
+img {
+  max-width: 100%;
+  display: block;
 }
 
+input,
 textarea {
-  resize: none;
-  padding: 10px;
+  font-family: var(--primary-font);
   outline: 0 !important;
+  color: var(--text);
+  background: transparent;
 }
 
-input:focus,
-textarea:focus {
-  border-color: black !important;
+::selection {
+  background: var(--accent-2);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #26232f;
+  border-radius: 10px;
 }
 
 .flex {
   display: flex;
 }
-
 .align-center {
   align-items: center;
 }
-
 .justify-center {
   justify-content: center;
 }
 
 .container {
-  max-width: 100%;
+  max-width: var(--container);
   width: 100%;
-  padding: 0 16px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px 2px var(--accent);
+}
+
+.section {
+  position: relative;
+  padding: 96px 0;
+  z-index: 1;
+}
+
+.section-head {
+  max-width: 640px;
+  margin: 0 0 56px;
+}
+
+.section-head h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-top: 14px;
+}
+
+.section-head p {
+  margin-top: 16px;
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.gradient-word {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: italic;
+  font-family: var(--accent-font);
 }
 
 /* footer */
-
 footer {
-  padding: 30px 0;
+  position: relative;
+  z-index: 1;
+  padding: 48px 0 36px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+
+footer .footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
   text-align: center;
 }
 
-footer a {
-  color: #ff004f;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0.048px;
-  text-transform: capitalize;
+footer a.footer-cta {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
 footer p {
-  color: var(--color-black-solid, #000);
+  color: var(--text-faint);
   font-size: 12px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0.048px;
-  text-transform: capitalize;
-  margin: 12px 0 0;
+  letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 1024px) {
-  footer a {
-    font-size: 16px;
+@media screen and (min-width: 900px) {
+  footer .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
   }
 
-  footer p {
-    font-size: 14px;
-    margin: 16px 0 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    padding: 0 20px;
-    margin: 0 auto;
+  .section {
+    padding: 140px 0;
   }
 }
