@@ -84,7 +84,7 @@ const screens = [
   {
     img: decisionDetails,
     title: 'Decision Details',
-    desc: 'A single decision broken down with revenue, EBITDA, turnover and performance context, so the person deciding has everything on one screen.',
+    desc: 'A single decision broken down with market growth, EBITDA contribution and pricing context, so the person deciding has everything on one screen.',
   },
   {
     img: delegateScreen,
