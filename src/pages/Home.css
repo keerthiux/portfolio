@@ -325,7 +325,7 @@
   position: relative;
   overflow: hidden;
   text-align: center;
-  padding: 72px 32px;
+  padding: 72px 32px !important;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   background: radial-gradient(circle at 50% 0%, rgba(124, 92, 255, 0.18), transparent 60%), var(--bg-elevated);

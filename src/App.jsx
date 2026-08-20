@@ -10,6 +10,8 @@ import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import StarField from './components/StarField/StarField';
+import ScrollToTop from './components/ScrollToTop';
+import Cursor from './components/Cursor/Cursor';
 
 const pageTransition = {
   initial: { opacity: 0, y: 14 },
@@ -23,6 +25,8 @@ export default function App() {
 
   return (
     <>
+      <ScrollToTop />
+      <Cursor />
       <StarField />
       <Header />
       <AnimatePresence mode="wait">
