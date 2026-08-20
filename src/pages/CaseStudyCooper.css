@@ -307,7 +307,7 @@
 
 .cs-cta-card {
   text-align: center;
-  padding: 72px 32px !important;
+  padding: 72px 32px;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   background: var(--bg-elevated);

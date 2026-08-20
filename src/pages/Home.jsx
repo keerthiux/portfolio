@@ -17,21 +17,21 @@ const caseStudies = [
     tag: 'Product Design · SaaS',
     title: 'Cooper — an AI-powered decision-making platform for data teams',
     desc: 'Conceptual diagrams, wireframes and interactive prototypes for an enterprise dashboard, taken from concept through dev handoff.',
-    link: '/#/case-study/cooper',
+    link: '#/case-study/cooper',
   },
   {
     img: nexus,
     tag: 'Product Design · HRMS & Billing',
     title: 'Nexus — a billing & HR system rebuilt for clarity',
     desc: 'Redesigned a legacy HRMS and billing platform for PMOs, PMs and HR teams — cutting resource-allocation time by 2-3 hrs/week and admin errors by 30%.',
-    link: '/#/case-study/nexus',
+    link: '#/case-study/nexus',
   },
   {
     img: nexoraHero,
     tag: 'Product Design · SaaS CRM',
     title: 'Nexora — a CRM built for appointment-based businesses',
     desc: 'Designed and shipped a live CRM for clinics, gyms and salons end-to-end, from concept to a self-serve product.',
-    link: '/#/case-study/nexora',
+    link: '#/case-study/nexora',
   },
 ];
 
@@ -130,10 +130,10 @@ const Home = () => {
               </p>
             </Reveal>
             <Reveal type="up" delay={0.4} className="hero-actions">
-              <Button href="/resume.pdf" download="Sai_Keerthi_Resume.pdf">
+              <Button href={`${import.meta.env.BASE_URL}resume.pdf`} download="Sai_Keerthi_Resume.pdf">
                 Download résumé
               </Button>
-              <Button fill={false} href="/#/contact">
+              <Button fill={false} href="#/contact">
                 Start a project
               </Button>
             </Reveal>
@@ -204,7 +204,7 @@ const Home = () => {
             ))}
           </div>
           <Reveal type="fade" delay={0.3} className="career-more">
-            <Button fill={false} href="/#/about">
+            <Button fill={false} href="#/about">
               See full career story
             </Button>
           </Reveal>
@@ -276,7 +276,7 @@ const Home = () => {
               Currently based in Hyderabad, open to remote and hybrid product
               design roles and select freelance collaborations.
             </p>
-            <Button href="/#/contact">Get in touch</Button>
+            <Button href="#/contact">Get in touch</Button>
           </Reveal>
         </div>
       </section>

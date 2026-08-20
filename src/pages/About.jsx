@@ -1,4 +1,4 @@
-import banner from '/src/assets/images/abt_banner.jpg';
+import banner from '/src/assets/images/profilepic.jpg';
 import Button from '../components/Button/Button';
 import Reveal from '../components/Reveal/Reveal';
 import './About.css';
@@ -68,6 +68,7 @@ const skillGroups = [
 const education = [
   { degree: 'Master of Business Administration', school: 'Lovely Professional University, Jalandhar', period: '2017 — 2019' },
   { degree: 'B.Com (Computer Applications)', school: 'St. Joseph Degree College, Kurnool', period: '2013 — 2016' },
+  { degree: 'Certified Usability Analyst (CUA)', school: 'Human Factors International (HFI)', period: 'Certification' },
 ];
 
 const About = () => {
@@ -98,7 +99,7 @@ const About = () => {
             rationale to stakeholders, and owning delivery independently
             across geographies.
           </p>
-          <Button href="/resume.pdf" download="Sai_Keerthi_Resume.pdf">
+          <Button href={`${import.meta.env.BASE_URL}resume.pdf`} download="Sai_Keerthi_Resume.pdf">
             Download résumé
           </Button>
         </Reveal>

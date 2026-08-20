@@ -280,10 +280,10 @@ const CaseStudyCooper = () => {
               <Button href={XD_LINK} target="_blank">
                 Open in Adobe XD
               </Button>
-              <Button fill={false} href="/#/contact">
+              <Button fill={false} href="#/contact">
                 Get in touch
               </Button>
-              <Button fill={false} href="/#/">
+              <Button fill={false} href="#/">
                 Back to all work
               </Button>
             </div>

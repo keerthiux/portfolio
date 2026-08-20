@@ -17,7 +17,7 @@ const SocialIcons = () => {
         <span>LinkedIn</span>
       </a>
       <a
-        href="/resume.pdf"
+        href={`${import.meta.env.BASE_URL}resume.pdf`}
         download="Sai_Keerthi_Resume.pdf"
         aria-label="Download résumé"
         className="social-icon-link"

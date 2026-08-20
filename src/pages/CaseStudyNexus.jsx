@@ -520,8 +520,8 @@ const CaseStudyNexus = () => {
               <span className="gradient-word">or design decision</span> in depth.
             </h2>
             <div className="cs-cta-actions">
-              <Button href="/#/contact">Get in touch</Button>
-              <Button fill={false} href="/#/">
+              <Button href="#/contact">Get in touch</Button>
+              <Button fill={false} href="#/">
                 Back to all work
               </Button>
             </div>

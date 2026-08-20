@@ -276,10 +276,10 @@ const CaseStudyNexoraCRM = () => {
               <Button href="https://nexoracrm.co/" target="_blank">
                 Visit NexoraCRM
               </Button>
-              <Button fill={false} href="/#/contact">
+              <Button fill={false} href="#/contact">
                 Get in touch
               </Button>
-              <Button fill={false} href="/#/">
+              <Button fill={false} href="#/">
                 Back to all work
               </Button>
             </div>
