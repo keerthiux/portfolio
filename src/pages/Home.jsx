@@ -13,11 +13,11 @@ import './Home.css';
 
 const caseStudies = [
   {
-    img: cooper,
-    tag: 'Product Design · SaaS',
-    title: 'Cooper — an AI-powered decision-making platform for data teams',
-    desc: 'Conceptual diagrams, wireframes and interactive prototypes for an enterprise dashboard, taken from concept through dev handoff.',
-    link: '#/case-study/cooper',
+    img: nexoraHero,
+    tag: 'Product Design · SaaS CRM',
+    title: 'Nexora — a CRM built for appointment-based businesses',
+    desc: 'Designed and shipped a live CRM for clinics, gyms and salons end-to-end, from concept to a self-serve product.',
+    link: '#/case-study/nexora',
   },
   {
     img: nexus,
@@ -27,11 +27,11 @@ const caseStudies = [
     link: '#/case-study/nexus',
   },
   {
-    img: nexoraHero,
-    tag: 'Product Design · SaaS CRM',
-    title: 'Nexora — a CRM built for appointment-based businesses',
-    desc: 'Designed and shipped a live CRM for clinics, gyms and salons end-to-end, from concept to a self-serve product.',
-    link: '#/case-study/nexora',
+    img: cooper,
+    tag: 'Product Design · SaaS',
+    title: 'Cooper — an AI-powered decision-making platform for data teams',
+    desc: 'Conceptual diagrams, wireframes and interactive prototypes for an enterprise dashboard, taken from concept through dev handoff.',
+    link: '#/case-study/cooper',
   },
 ];
 
