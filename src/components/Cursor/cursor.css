@@ -44,3 +44,19 @@ body.cursor-visible .cursor-dot {
     display: none;
   }
 }
+
+body.cursor-in-form .cursor-dot,
+body.cursor-in-form .cursor-star {
+  display: none;
+}
+
+body.cursor-in-form,
+body.cursor-in-form form,
+body.cursor-in-form form * {
+  cursor: auto;
+}
+
+body.cursor-in-form input,
+body.cursor-in-form textarea {
+  cursor: text;
+}

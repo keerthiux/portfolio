@@ -50,7 +50,11 @@ const Cursor = () => {
       }, LIFETIME);
     };
 
+    const FORM = 'form, input, textarea, select';
     const move = (e) => {
+      const inForm = !!(e.target.closest && e.target.closest(FORM));
+      document.body.classList.toggle('cursor-in-form', inForm);
+      if (inForm) return;
       dotX.set(e.clientX);
       dotY.set(e.clientY);
       if (!visibleRef.current) {
@@ -85,7 +89,7 @@ const Cursor = () => {
     document.documentElement.addEventListener('mouseleave', leave);
 
     return () => {
-      document.body.classList.remove('cursor-active', 'cursor-visible');
+      document.body.classList.remove('cursor-active', 'cursor-visible', 'cursor-in-form');
       window.removeEventListener('mousemove', move);
       window.removeEventListener('mouseover', over);
       window.removeEventListener('mouseout', out);
