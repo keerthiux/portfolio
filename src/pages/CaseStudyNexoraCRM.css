@@ -25,6 +25,19 @@
   line-height: 1.75;
 }
 
+.cs-live-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cs-live-link:hover {
+  text-decoration: underline;
+}
+
 .cs-meta-grid {
   display: grid;
   grid-template-columns: 1fr;

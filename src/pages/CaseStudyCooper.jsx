@@ -215,7 +215,7 @@ const CaseStudyCooper = () => {
           <Reveal type="up" className="section-head">
             <span className="eyebrow">Product Walkthrough</span>
             <h2>Six screens from the live prototype.</h2>
-            <p>Pulled directly from the shipped Adobe XD prototype — the actual flow a PMO lead moves through each day.</p>
+            <p>Pulled directly from the shipped Adobe XD prototype — the actual flow a data-team lead moves through each day.</p>
           </Reveal>
           <div className="cs-gallery-grid">
             {screens.map((s, i) => (

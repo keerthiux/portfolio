@@ -5,13 +5,23 @@ import './About.css';
 
 const experience = [
   {
+    role: 'Co-Founder & Head of Product Design',
+    company: 'NexoraCRM · nexoracrm.co',
+    period: 'Jul 2026 — Present',
+    points: [
+      'Co-founded and lead product design for NexoraCRM, a live multi-tenant SaaS CRM for clinics and hospitals.',
+      'Designed patient records, appointment scheduling, WhatsApp booking/cancellation/reschedule notifications, and GST-ready invoicing.',
+      'Designed self-serve onboarding and subscription flows with 3 pricing tiers (Razorpay + UPI Autopay).',
+    ],
+  },
+  {
     role: 'Senior Software Engineer (Product Design)',
     company: 'Infovision Labs · Digital API, Verizon',
-    period: 'May 2025 — Present',
+    period: 'May 2025 — Jul 2026',
     points: [
-      'Shape design and product decisions for enterprise dashboard applications, driving visual style, layout and interaction flows end-to-end.',
-      'Produce conceptual diagrams, wireframes and interactive prototypes to align stakeholders ahead of build.',
-      'Own design discussions and final UI handoff, embedding usability best practices at every stage of delivery.',
+      'Shaped design and product decisions for enterprise dashboard applications, driving visual style, layout and interaction flows end-to-end.',
+      'Produced conceptual diagrams, wireframes and interactive prototypes to align stakeholders ahead of build.',
+      'Owned design discussions and final UI handoff, embedding usability best practices at every stage of delivery.',
     ],
   },
   {
@@ -53,7 +63,7 @@ const skillGroups = [
   },
   {
     title: 'Tools',
-    items: ['Figma', 'Adobe XD', 'Illustrator', 'Sketch', 'InVision', 'Axure RP', 'Zeplin', 'Framer'],
+    items: ['Figma', 'Framer', 'Miro', 'Axure RP', 'Sketch', 'Illustrator', 'Balsamiq', 'Flinto', 'Jira'],
   },
   {
     title: 'Research',

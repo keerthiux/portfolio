@@ -16,7 +16,7 @@ const caseStudies = [
     img: nexoraHero,
     tag: 'Product Design · SaaS CRM',
     title: 'Nexora — a CRM built for appointment-based businesses',
-    desc: 'Designed and shipped a live CRM for clinics, gyms and salons end-to-end, from concept to a self-serve product.',
+    desc: 'Co-founded and designed a live SaaS CRM for clinics and hospitals — from concept to a self-serve product.',
     link: '#/case-study/nexora',
   },
   {
@@ -85,7 +85,12 @@ const marquee = [
 
 const career = [
   {
-    year: '2025 — Now',
+    year: '2026 — Now',
+    role: 'Co-Founder & Head of Product Design',
+    detail: 'NexoraCRM · nexoracrm.co',
+  },
+  {
+    year: '2025 — 2026',
     role: 'Senior Software Engineer (Product Design)',
     detail: 'Infovision Labs · Digital API, Verizon',
   },

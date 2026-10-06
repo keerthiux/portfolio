@@ -6,9 +6,9 @@ import './CaseStudyNexoraCRM.css';
 
 const meta = [
   { label: 'Project Type', value: 'SaaS CRM for appointment-based businesses' },
-  { label: 'Team', value: 'Solo — designed and built end-to-end' },
+  { label: 'Team', value: 'Co-founder — led product design with a small engineering team' },
   { label: 'Duration', value: 'Concept to shipped product' },
-  { label: 'My Role', value: 'Product design, UX, and build' },
+  { label: 'My Role', value: 'Co-Founder & Head of Product Design' },
 ];
 
 const problems = [
@@ -44,7 +44,7 @@ const pillars = [
   {
     title: 'Multi-Business Ready',
     icon: '🏢',
-    items: ['Works for clinics, gyms, salons', 'Role-based staff access', 'One account, every location'],
+    items: ['Works for clinics and hospitals', 'Role-based staff access', 'One account, every location'],
   },
 ];
 
@@ -80,10 +80,13 @@ const CaseStudyNexoraCRM = () => {
               <span className="gradient-word">appointment-based businesses</span>.
             </h1>
             <p>
-              NexoraCRM is a live product I designed and built end-to-end — taking it from
-              a market problem to a shipped SaaS dashboard for clinics, gyms and salons,
+              NexoraCRM is a live product I co-founded and led product design for — taking it
+              from a market problem to a shipped SaaS dashboard for clinics and hospitals,
               with a little help from AI tooling along the way.
             </p>
+            <a className="cs-live-link" href="https://nexoracrm.co" target="_blank" rel="noreferrer">
+              Visit live product →
+            </a>
           </Reveal>
 
           <Reveal type="up" delay={0.1} className="cs-meta-grid">
@@ -107,7 +110,7 @@ const CaseStudyNexoraCRM = () => {
             <span className="eyebrow">The Problem</span>
             <h2>Appointment-based businesses run on guesswork.</h2>
             <p>
-              Clinics, gyms and salons are booked solid — and still running their business
+              Clinics and hospitals are booked solid — and still running their business
               on notebooks, WhatsApp threads and spreadsheets. Every one of those tools was
               built for something else, so the cracks show up as missed appointments and
               lost revenue.
@@ -128,13 +131,13 @@ const CaseStudyNexoraCRM = () => {
         <div className="container cs-narrow">
           <Reveal type="up" className="section-head">
             <span className="eyebrow">The Approach</span>
-            <h2>Designed and shipped end-to-end, solo.</h2>
+            <h2>Designed and shipped end-to-end, as co-founder.</h2>
             <p>
-              Rather than a traditional research-and-handoff process, I worked solo —
-              scoping the problem, designing the product, and building the live app in
-              tight iteration loops, with some AI-assisted tooling along the way. Every
-              screen, flow and line of copy was iterated on directly, letting design
-              decisions turn into shipped product quickly.
+              Rather than a traditional research-and-handoff process, I led product design
+              directly with a small engineering team — scoping the problem, designing the
+              product, and shipping the live app in tight iteration loops, with some
+              AI-assisted tooling along the way. Every screen, flow and line of copy was
+              iterated on directly, letting design decisions turn into shipped product quickly.
             </p>
           </Reveal>
           <Reveal type="up" delay={0.1} className="cs-media-card cs-media-narrow">
