@@ -23,7 +23,7 @@ const caseStudies = [
     img: nexus,
     tag: 'Product Design · HRMS & Billing',
     title: 'Nexus — a billing & HR system rebuilt for clarity',
-    desc: 'Redesigned a legacy HRMS and billing platform for PMOs, PMs and HR teams — cutting resource-allocation time by 2-3 hrs/week and admin errors by 30%.',
+    desc: 'Redesigned a legacy HRMS and billing platform for PMOs, PMs and HR teams — 60% fewer steps to create an invoice and 3× faster HR record lookup.',
     link: '#/case-study/nexus',
   },
   {
