@@ -60,7 +60,7 @@ const testimonials = [
 ];
 
 const stats = [
-  { value: '5+', label: 'Years in product design' },
+  { value: '~5', label: 'Years in product design' },
   { value: '150+', label: 'Reusable components shipped' },
   { value: '30+', label: 'User interviews led' },
   { value: '95%', label: 'On-time delivery rate' },
