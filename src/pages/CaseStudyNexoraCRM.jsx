@@ -189,9 +189,9 @@ const CaseStudyNexoraCRM = () => {
             </p>
           </Reveal>
           <Reveal type="up" delay={0.1} className="cs-problem-list">
-            {problems.map((p) => (
+            {problems.map((p, i) => (
               <div key={p} className="cs-problem-row">
-                <span aria-hidden="true">!</span>
+                <span aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
                 {p}
               </div>
             ))}

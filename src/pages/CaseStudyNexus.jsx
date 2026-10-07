@@ -297,9 +297,9 @@ const CaseStudyNexus = () => {
             <img src={issues} alt="Annotated screenshot of usability issues in the legacy data table" />
           </Reveal>
           <Reveal type="up" delay={0.15} className="cs-issue-grid">
-            {foundIssues.map((iss) => (
+            {foundIssues.map((iss, i) => (
               <div key={iss} className="cs-issue-row">
-                <span aria-hidden="true">!</span>
+                <span aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
                 {iss}
               </div>
             ))}
