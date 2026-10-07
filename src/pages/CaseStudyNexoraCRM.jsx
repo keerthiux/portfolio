@@ -13,7 +13,7 @@ import Reveal from '../components/Reveal/Reveal';
 import './CaseStudyNexoraCRM.css';
 
 const meta = [
-  { label: 'Project Type', value: 'SaaS CRM for appointment-based businesses' },
+  { label: 'Project Type', value: 'SaaS CRM for clinics and hospitals' },
   { label: 'Team', value: 'Co-founder — led product design with a small engineering team' },
   { label: 'Duration', value: 'Concept to shipped product' },
   { label: 'My Role', value: 'Co-Founder & Head of Product Design' },

@@ -15,7 +15,7 @@ const caseStudies = [
   {
     img: nexoraHero,
     tag: 'Product Design · SaaS CRM',
-    title: 'Nexora — a CRM built for appointment-based businesses',
+    title: 'Nexora — a CRM built for clinics and hospitals',
     desc: 'Co-founded and designed a live SaaS CRM for clinics and hospitals — from concept to a self-serve product.',
     link: '#/case-study/nexora',
   },
