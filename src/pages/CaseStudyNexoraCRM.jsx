@@ -62,10 +62,6 @@ const decisions = [
     desc: 'NexoraCRM started as a generic appointment CRM for salons, gyms and clinics. I narrowed it to healthcare so patient records, doctors and visit history could be purpose-built instead of generic "customer" fields trying to serve three different industries at once.',
   },
   {
-    title: 'Built on Krayin CRM, not from scratch',
-    desc: 'The admin shell — leads, quotes, mail, contacts, roles — is Krayin’s open-source CRM underneath. We relabeled and extended it (Patients, Appointments, Doctors, Services, Payments) rather than spending design and engineering time rebuilding CRM fundamentals a healthcare appointment product doesn’t need to reinvent.',
-  },
-  {
     title: 'WhatsApp notifications, not SMS or email',
     desc: 'Booking, rescheduling and cancellation each trigger a WhatsApp message, with no SMS or generic-email equivalent. That’s where a patient actually sees it, so that’s the one channel we chose instead of spreading thin across three.',
   },
@@ -139,7 +135,7 @@ const CaseStudyNexoraCRM = () => {
             <span className="eyebrow">Case Study</span>
             <h1>
               Nexora — a CRM built for{' '}
-              <span className="gradient-word">appointment-based businesses</span>.
+              <span className="gradient-word">clinics and hospitals</span>.
             </h1>
             <p>
               NexoraCRM is a live product I co-founded and led product design for — taking it
@@ -184,7 +180,7 @@ const CaseStudyNexoraCRM = () => {
         <div className="container cs-narrow">
           <Reveal type="up" className="section-head">
             <span className="eyebrow">The Problem</span>
-            <h2>Appointment-based businesses run on guesswork.</h2>
+            <h2>Clinics run on guesswork.</h2>
             <p>
               Clinics and hospitals are booked solid — and still running their business
               on notebooks, WhatsApp threads and spreadsheets. Every one of those tools was
@@ -231,7 +227,7 @@ const CaseStudyNexoraCRM = () => {
         <div className="container">
           <Reveal type="up" className="section-head">
             <span className="eyebrow">Key Design Decisions</span>
-            <h2>Four calls that shaped the product.</h2>
+            <h2>Three calls that shaped the product.</h2>
           </Reveal>
           <div className="cs-approach-grid">
             {decisions.map((d, i) => (
