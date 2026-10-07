@@ -186,6 +186,39 @@
   max-width: 480px;
 }
 
+.cs-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cs-approach-card {
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.cs-approach-index {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.cs-approach-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.cs-approach-card p {
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
 .cs-callout {
   padding: 20px 24px;
   border-radius: var(--radius-md);
@@ -538,6 +571,10 @@
   }
 
   .cs-pillar-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cs-approach-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 

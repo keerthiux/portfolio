@@ -42,7 +42,7 @@ const pillars = [
   {
     title: 'Appointments',
     icon: '📅',
-    items: ['Drag-and-drop calendar', 'Automated SMS/WhatsApp reminders', 'Staff-wise availability'],
+    items: ['Drag-and-drop calendar', 'Automated WhatsApp reminders', 'Staff-wise availability'],
   },
   {
     title: 'Billing & Payments',
@@ -53,6 +53,25 @@ const pillars = [
     title: 'Multi-Business Ready',
     icon: '🏢',
     items: ['Works for clinics and hospitals', 'Role-based staff access', 'One account, every location'],
+  },
+];
+
+const decisions = [
+  {
+    title: 'Clinics and hospitals, not salons and gyms',
+    desc: 'NexoraCRM started as a generic appointment CRM for salons, gyms and clinics. I narrowed it to healthcare so patient records, doctors and visit history could be purpose-built instead of generic "customer" fields trying to serve three different industries at once.',
+  },
+  {
+    title: 'Built on Krayin CRM, not from scratch',
+    desc: 'The admin shell — leads, quotes, mail, contacts, roles — is Krayin’s open-source CRM underneath. I relabeled and extended it (Patients, Appointments, Doctors, Services, Payments) rather than spending design and engineering time rebuilding CRM fundamentals a healthcare appointment product doesn’t need to reinvent.',
+  },
+  {
+    title: 'WhatsApp notifications, not SMS or email',
+    desc: 'Booking, rescheduling and cancellation each trigger a WhatsApp message, with no SMS or generic-email equivalent. That’s where a patient actually sees it, so that’s the one channel I built instead of spreading thin across three.',
+  },
+  {
+    title: '"Book Appointment" as the one primary action',
+    desc: 'The dashboard, patients list, appointments list and calendar all carry the same button in the same top-right position. One action, same place, every screen — so there’s never a question of where to start a booking.',
   },
 ];
 
@@ -206,6 +225,24 @@ const CaseStudyNexoraCRM = () => {
             generous whitespace and one clear next action per card, so a busy front-desk
             staffer can scan it in seconds.
           </Reveal>
+        </div>
+      </section>
+
+      <section className="section cs-section">
+        <div className="container">
+          <Reveal type="up" className="section-head">
+            <span className="eyebrow">Key Design Decisions</span>
+            <h2>Four calls that shaped the product.</h2>
+          </Reveal>
+          <div className="cs-approach-grid">
+            {decisions.map((d, i) => (
+              <Reveal type="up" delay={i * 0.08} key={d.title} className="cs-approach-card">
+                <span className="cs-approach-index">{String(i + 1).padStart(2, '0')}</span>
+                <h3>{d.title}</h3>
+                <p>{d.desc}</p>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
