@@ -63,11 +63,11 @@ const decisions = [
   },
   {
     title: 'Built on Krayin CRM, not from scratch',
-    desc: 'The admin shell — leads, quotes, mail, contacts, roles — is Krayin’s open-source CRM underneath. I relabeled and extended it (Patients, Appointments, Doctors, Services, Payments) rather than spending design and engineering time rebuilding CRM fundamentals a healthcare appointment product doesn’t need to reinvent.',
+    desc: 'The admin shell — leads, quotes, mail, contacts, roles — is Krayin’s open-source CRM underneath. We relabeled and extended it (Patients, Appointments, Doctors, Services, Payments) rather than spending design and engineering time rebuilding CRM fundamentals a healthcare appointment product doesn’t need to reinvent.',
   },
   {
     title: 'WhatsApp notifications, not SMS or email',
-    desc: 'Booking, rescheduling and cancellation each trigger a WhatsApp message, with no SMS or generic-email equivalent. That’s where a patient actually sees it, so that’s the one channel I built instead of spreading thin across three.',
+    desc: 'Booking, rescheduling and cancellation each trigger a WhatsApp message, with no SMS or generic-email equivalent. That’s where a patient actually sees it, so that’s the one channel we chose instead of spreading thin across three.',
   },
   {
     title: '"Book Appointment" as the one primary action',
@@ -143,8 +143,7 @@ const CaseStudyNexoraCRM = () => {
             </h1>
             <p>
               NexoraCRM is a live product I co-founded and led product design for — taking it
-              from a market problem to a shipped SaaS dashboard for clinics and hospitals,
-              with a little help from AI tooling along the way.
+              from a market problem to a shipped SaaS dashboard for clinics and hospitals.
             </p>
             <a className="cs-live-link" href="https://nexoracrm.co" target="_blank" rel="noreferrer">
               Visit live product →
@@ -212,9 +211,9 @@ const CaseStudyNexoraCRM = () => {
             <p>
               Rather than a traditional research-and-handoff process, I led product design
               directly with a small engineering team — scoping the problem, designing the
-              product, and shipping the live app in tight iteration loops, with some
-              AI-assisted tooling along the way. Every screen, flow and line of copy was
-              iterated on directly, letting design decisions turn into shipped product quickly.
+              product, and shipping the live app in tight iteration loops. Every screen, flow
+              and line of copy was iterated on directly, letting design decisions turn into
+              shipped product quickly.
             </p>
           </Reveal>
           <Reveal type="up" delay={0.1} className="cs-media-card cs-media-narrow">
