@@ -165,7 +165,6 @@ const outcomes = [
   { value: '↓ 60%', label: 'Steps to create an invoice', tone: 'blue' },
   { value: '↑ 3×', label: 'Faster HR record lookup', tone: 'green' },
   { value: '1 system', label: 'Unified design language', tone: 'amber' },
-  { value: '↑ SUS', label: 'Improved usability score', tone: 'grey' },
 ];
 
 const CaseStudyNexus = () => {
@@ -185,6 +184,21 @@ const CaseStudyNexus = () => {
               Users were frustrated, errors were common, and critical workflows took far too
               long.
             </p>
+          </Reveal>
+
+          <Reveal type="up" delay={0.05} className="cs-tldr">
+            <div>
+              <span>Problem</span>
+              <p>A legacy HRMS and billing platform was slow and error-prone, frustrating the PMOs, PMs and HR teams who relied on it daily.</p>
+            </div>
+            <div>
+              <span>My Role</span>
+              <p>{meta.find((m) => m.label === 'My Role').value}</p>
+            </div>
+            <div>
+              <span>Result</span>
+              <p>60% fewer steps to create an invoice and 3× faster HR record lookup, on one unified design language.</p>
+            </div>
           </Reveal>
 
           <Reveal type="up" delay={0.1} className="cs-meta-grid">

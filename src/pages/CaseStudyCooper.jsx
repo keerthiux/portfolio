@@ -128,10 +128,25 @@ const CaseStudyCooper = () => {
               teams.
             </h1>
             <p>
-              An early project from my time at Wavelabs, revisited here with a fresh eye.
-              Cooper brought decisions, focus areas and team health into one dashboard for
-              data teams juggling too many disconnected tools.
+              An early project from my time at Wavelabs. Cooper brought decisions, focus
+              areas and team health into one dashboard for data teams juggling too many
+              disconnected tools.
             </p>
+          </Reveal>
+
+          <Reveal type="up" delay={0.05} className="cs-tldr">
+            <div>
+              <span>Problem</span>
+              <p>Decisions, priorities and team health lived across disconnected chat threads, spreadsheets and docs.</p>
+            </div>
+            <div>
+              <span>My Role</span>
+              <p>UX Design, Research &amp; Prototyping</p>
+            </div>
+            <div>
+              <span>Result</span>
+              <p>A shipped prototype bringing decisions, focus areas and team health into one dashboard, built and validated in agile sprints.</p>
+            </div>
           </Reveal>
 
           <Reveal type="up" delay={0.1} className="cs-meta-grid">
@@ -263,8 +278,8 @@ const CaseStudyCooper = () => {
             ))}
           </div>
           <Reveal type="fade" delay={0.25} className="cs-note">
-            This was an earlier project in my career, revisited here for context — the
-            screens above are pulled directly from the original Adobe XD prototype.
+            This was an earlier project in my career — the screens above are pulled
+            directly from the original Adobe XD prototype.
           </Reveal>
         </div>
       </section>

@@ -1,5 +1,13 @@
 import heroSite from '/src/assets/images/nexora/hero-site.jpg';
 import scheduleCard from '/src/assets/images/nexora/schedule-card.jpg';
+import dashboardScreen from '/src/assets/images/nexora/screens/01-dashboard.jpg';
+import appointmentsScreen from '/src/assets/images/nexora/screens/02-appointments.jpg';
+import calendarScreen from '/src/assets/images/nexora/screens/03-calendar.jpg';
+import patientsScreen from '/src/assets/images/nexora/screens/04-patients.jpg';
+import paymentsScreen from '/src/assets/images/nexora/screens/05-payments.jpg';
+import doctorsScreen from '/src/assets/images/nexora/screens/06-doctors.jpg';
+import servicesScreen from '/src/assets/images/nexora/screens/07-services.jpg';
+import settingsScreen from '/src/assets/images/nexora/screens/08-settings.jpg';
 import Button from '../components/Button/Button';
 import Reveal from '../components/Reveal/Reveal';
 import './CaseStudyNexoraCRM.css';
@@ -12,14 +20,14 @@ const meta = [
 ];
 
 const problems = [
-  'Customer records scattered across notebooks, WhatsApp and spreadsheets',
+  'Patient records scattered across notebooks, WhatsApp and spreadsheets',
   'Missed appointments and no-shows because of manual reminders',
   'No clear picture of daily revenue or outstanding payments',
   'Staff double-booking the same slot by accident',
 ];
 
 const solutions = [
-  'Every customer, visit and note in one searchable place',
+  'Every patient, visit and note in one searchable place',
   'Automated appointment reminders that cut no-shows',
   'A live dashboard of bookings, billing and outstanding dues',
   'One shared calendar your whole team can trust',
@@ -27,9 +35,9 @@ const solutions = [
 
 const pillars = [
   {
-    title: 'Customer Records',
+    title: 'Patient Records',
     icon: '🗂️',
-    items: ['Full visit & purchase history', 'Notes, tags & custom fields', 'Fast search across your base'],
+    items: ['Full visit history', 'Notes, tags & custom fields', 'Fast search across your base'],
   },
   {
     title: 'Appointments',
@@ -39,7 +47,7 @@ const pillars = [
   {
     title: 'Billing & Payments',
     icon: '💳',
-    items: ['Instant invoices & receipts', 'Track dues at a glance', 'Package & membership billing'],
+    items: ['Instant invoices & receipts', 'Track dues at a glance'],
   },
   {
     title: 'Multi-Business Ready',
@@ -51,21 +59,56 @@ const pillars = [
 const onboarding = [
   { step: '01', title: 'Create your account', desc: 'Sign up and tell us a little about your business type.' },
   { step: '02', title: 'Pick a plan', desc: 'Choose the plan that matches your team size and needs.' },
-  { step: '03', title: 'Import your customers', desc: 'Bring in your existing customer list in a few clicks.' },
+  { step: '03', title: 'Import your patients', desc: 'Bring in your existing patient list in a few clicks.' },
   { step: '04', title: 'Start booking', desc: 'Your calendar, billing and records are ready to use.' },
 ];
 
-const pricing = [
-  { tier: 'Basic', price: '₹999', period: '/month', seats: 'Up to 3 team members' },
-  { tier: 'Pro', price: '₹2,999', period: '/month', seats: 'Up to 10 team members', highlight: true },
-  { tier: 'Enterprise', price: '₹9,999', period: '/month', seats: 'Up to 50 team members' },
+const screens = [
+  {
+    img: dashboardScreen,
+    title: 'Dashboard',
+    desc: 'Patient count, upcoming appointments, revenue and growth trends, plus top patients and a status breakdown at a glance.',
+  },
+  {
+    img: appointmentsScreen,
+    title: 'Appointments',
+    desc: 'Every booking in one searchable list — booked, completed and rescheduled statuses, with doctor and quick actions per row.',
+  },
+  {
+    img: calendarScreen,
+    title: 'Calendar',
+    desc: 'A week-view calendar color-coded by doctor, so front-desk staff can spot gaps and conflicts fast.',
+  },
+  {
+    img: patientsScreen,
+    title: 'Patients',
+    desc: 'Searchable patient directory with mobile number, gender and age at a glance.',
+  },
+  {
+    img: paymentsScreen,
+    title: 'Payments',
+    desc: 'A ledger of completed-visit payments — amount, mode and status — separate from the appointment and patient views.',
+  },
+  {
+    img: doctorsScreen,
+    title: 'Doctors',
+    desc: 'Doctor roster with specialization and type, so bookings and the calendar can be assigned per provider.',
+  },
+  {
+    img: servicesScreen,
+    title: 'Services',
+    desc: 'The service catalog with approximate pricing, used when booking an appointment or completing a visit.',
+  },
+  {
+    img: settingsScreen,
+    title: 'Settings',
+    desc: 'Role and user management, so clinics can control who can see and edit what.',
+  },
 ];
 
 const outcomes = [
   { value: '4 steps', label: 'From signup to fully booked calendar' },
   { value: '3 tiers', label: 'Transparent, self-serve pricing' },
-  { value: '1 dashboard', label: 'Replacing notebooks, WhatsApp & spreadsheets' },
-  { value: '0-code', label: 'Setup — no IT team required' },
 ];
 
 const CaseStudyNexoraCRM = () => {
@@ -87,6 +130,21 @@ const CaseStudyNexoraCRM = () => {
             <a className="cs-live-link" href="https://nexoracrm.co" target="_blank" rel="noreferrer">
               Visit live product →
             </a>
+          </Reveal>
+
+          <Reveal type="up" delay={0.05} className="cs-tldr">
+            <div>
+              <span>Problem</span>
+              <p>Clinics and hospitals ran on notebooks, WhatsApp threads and spreadsheets, with no shared record of patients, bookings or dues.</p>
+            </div>
+            <div>
+              <span>My Role</span>
+              <p>Co-Founder &amp; Head of Product Design</p>
+            </div>
+            <div>
+              <span>Result</span>
+              <p>A live, self-serve SaaS CRM — patients, appointments and billing in one calm dashboard.</p>
+            </div>
           </Reveal>
 
           <Reveal type="up" delay={0.1} className="cs-meta-grid">
@@ -205,6 +263,27 @@ const CaseStudyNexoraCRM = () => {
       </section>
 
       <section className="section cs-section">
+        <div className="container">
+          <Reveal type="up" className="section-head">
+            <span className="eyebrow">Product Walkthrough</span>
+            <h2>Eight screens from the live product.</h2>
+            <p>Captured directly from the shipped app — the actual flow a front-desk staffer moves through each day.</p>
+          </Reveal>
+          <div className="cs-gallery-grid">
+            {screens.map((s, i) => (
+              <Reveal type="up" delay={i * 0.06} key={s.title} className="cs-gallery-card">
+                <img src={s.img} alt={`NexoraCRM ${s.title} screen`} />
+                <div className="cs-gallery-caption">
+                  <h3>{s.title}</h3>
+                  <p>{s.desc}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section cs-section">
         <div className="container cs-narrow">
           <Reveal type="up" className="section-head">
             <span className="eyebrow">Onboarding</span>
@@ -228,26 +307,11 @@ const CaseStudyNexoraCRM = () => {
           <Reveal type="up" className="section-head">
             <span className="eyebrow">Business Model</span>
             <h2>Simple, transparent pricing.</h2>
-            <p>Designed self-serve pricing so a business could pick a plan and start booking without a sales call.</p>
           </Reveal>
-          <div className="cs-pricing-grid">
-            {pricing.map((p, i) => (
-              <Reveal
-                type="up"
-                delay={i * 0.08}
-                key={p.tier}
-                className={`cs-price-card ${p.highlight ? 'cs-price-highlight' : ''}`}
-              >
-                {p.highlight && <span className="cs-price-badge">Most Popular</span>}
-                <h3>{p.tier}</h3>
-                <p className="cs-price-value">
-                  {p.price}
-                  <span>{p.period}</span>
-                </p>
-                <p className="cs-price-seats">{p.seats}</p>
-              </Reveal>
-            ))}
-          </div>
+          <Reveal type="fade" delay={0.1} className="cs-callout">
+            Designed self-serve pricing across three tiers — Basic, Pro and Enterprise —
+            so a business could pick a plan by team size and start booking without a sales call.
+          </Reveal>
         </div>
       </section>
 
