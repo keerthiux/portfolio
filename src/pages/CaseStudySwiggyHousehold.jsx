@@ -8,7 +8,7 @@ const asset = (name) => `${import.meta.env.BASE_URL}case-studies/swiggy-househol
 
 const meta = [
   { label: 'Role', value: 'UX research + product design' },
-  { label: 'Type', value: 'Concept / design challenge' },
+  { label: 'Type', value: 'Concept project' },
   { label: 'Duration', value: 'About 1 week' },
   { label: 'Tools', value: 'Figma, Claude' },
 ];
@@ -175,7 +175,7 @@ const testStats = [
 
 const reflections = [
   {
-    title: "What I'd test next",
+    title: "What we'd test next",
     desc: 'A clickable prototype, and a solid vs outline chip.',
   },
   {
@@ -183,8 +183,8 @@ const reflections = [
     desc: 'Ordering from several restaurants. 3 of 7 brought it up in the test.',
   },
   {
-    title: 'How I used AI',
-    desc: 'It sped up drafting. Research, testing and decisions stayed mine.',
+    title: 'How we used AI',
+    desc: 'It sped up drafting. Research, testing and decisions stayed ours.',
   },
 ];
 
@@ -233,8 +233,8 @@ const CaseStudySwiggyHousehold = () => {
             <Reveal type="scale" delay={0.15} className="sh-hero-stage">
               <img
                 className="sh-phone"
-                src={asset('home-chip.png')}
-                alt='Swiggy Home screen with an "Ordering for: Household" chip and member avatars under the delivery address.'
+                src={asset('home-hero.png')}
+                alt='Swiggy Home screen with an "Ordering for Home · 3 members" chip under the delivery address, restaurant offers, and a household cart bar at the bottom.'
                 width="780"
                 height="1688"
               />
@@ -263,15 +263,15 @@ const CaseStudySwiggyHousehold = () => {
         <section className="section cs-section cs-alt">
           <div className="container cs-narrow">
             <Reveal type="up" className="section-head">
-              <span className="eyebrow">The tension</span>
+              <span className="eyebrow">Our findings</span>
               <h2>Everyone orders together. The app doesn't know.</h2>
               <p>
-                5 of 6 people I interviewed order for flatmates, partners, teens or elderly
+                5 of 6 people we interviewed order for flatmates, partners, teens or elderly
                 parents. They pass the phone around, split bills on PhonePe and check food
                 labels by hand.
               </p>
               <p>
-                Group Order exists, but 5 of 6 didn't know about it. I asked 4 to try it, and
+                Group Order exists, but 5 of 6 didn't know about it. We asked 4 to try it, and
                 all 4 hit problems.
               </p>
             </Reveal>
@@ -395,7 +395,7 @@ const CaseStudySwiggyHousehold = () => {
         <section className="section cs-section">
           <div className="container">
             <Reveal type="up" className="section-head">
-              <span className="eyebrow">The design</span>
+              <span className="eyebrow">Our solution</span>
               <h2>Five moments where the household shows up.</h2>
             </Reveal>
             <Reveal type="up" amount={0.1}>
@@ -518,11 +518,11 @@ const CaseStudySwiggyHousehold = () => {
         <section className="section cs-section cs-alt">
           <div className="container cs-narrow">
             <Reveal type="up" className="section-head">
-              <span className="eyebrow">What I changed</span>
+              <span className="eyebrow">What we changed</span>
               <h2>People start from food, not settings.</h2>
               <p>
-                So I added a household banner on the restaurant page and a prompt in the cart.
-                And I renamed the chip, because "Home" and "3 members" confused people.
+                So we added a household banner on the restaurant page and a prompt in the cart.
+                And we renamed the chip, because "Home" and "3 members" confused people.
               </p>
             </Reveal>
             <Reveal type="up" className="sh-rename">
