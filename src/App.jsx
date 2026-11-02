@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import CaseStudyNexus from './pages/CaseStudyNexus';
 import CaseStudyNexoraCRM from './pages/CaseStudyNexoraCRM';
 import CaseStudyCooper from './pages/CaseStudyCooper';
+import CaseStudySwiggyHousehold from './pages/CaseStudySwiggyHousehold';
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -45,6 +46,7 @@ export default function App() {
             <Route path="/case-study/nexus" element={<CaseStudyNexus />} />
             <Route path="/case-study/nexora" element={<CaseStudyNexoraCRM />} />
             <Route path="/case-study/cooper" element={<CaseStudyCooper />} />
+            <Route path="/case-study/swiggy-household" element={<CaseStudySwiggyHousehold />} />
           </Routes>
         </motion.div>
       </AnimatePresence>
