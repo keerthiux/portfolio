@@ -14,9 +14,9 @@ import './CaseStudyNexoraCRM.css';
 
 const meta = [
   { label: 'Project Type', value: 'SaaS CRM for clinics and hospitals' },
-  { label: 'Team', value: 'Co-founder — led product design with a small engineering team' },
+  { label: 'Team', value: 'Freelance — led product design with a small engineering team' },
   { label: 'Duration', value: 'Concept to shipped product' },
-  { label: 'My Role', value: 'Co-Founder & Head of Product Design' },
+  { label: 'My Role', value: 'Senior Product Designer (Freelance)' },
 ];
 
 const problems = [
@@ -138,8 +138,9 @@ const CaseStudyNexoraCRM = () => {
               <span className="gradient-word">clinics and hospitals</span>.
             </h1>
             <p>
-              NexoraCRM is a live product I co-founded and led product design for — taking it
-              from a market problem to a shipped SaaS dashboard for clinics and hospitals.
+              NexoraCRM is a live product I led product design for as a freelance designer —
+              taking it from a market problem to a shipped SaaS dashboard for clinics and
+              hospitals.
             </p>
             <a className="cs-live-link" href="https://nexoracrm.co" target="_blank" rel="noreferrer">
               Visit live product →
@@ -153,7 +154,7 @@ const CaseStudyNexoraCRM = () => {
             </div>
             <div>
               <span>My Role</span>
-              <p>Co-Founder &amp; Head of Product Design</p>
+              <p>Senior Product Designer (Freelance)</p>
             </div>
             <div>
               <span>Result</span>
@@ -203,7 +204,7 @@ const CaseStudyNexoraCRM = () => {
         <div className="container cs-narrow">
           <Reveal type="up" className="section-head">
             <span className="eyebrow">The Approach</span>
-            <h2>Designed and shipped end-to-end, as co-founder.</h2>
+            <h2>Designed end-to-end, working directly with engineering.</h2>
             <p>
               Rather than a traditional research-and-handoff process, I led product design
               directly with a small engineering team — scoping the problem, designing the

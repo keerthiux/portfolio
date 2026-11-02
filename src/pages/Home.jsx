@@ -16,7 +16,7 @@ const caseStudies = [
     img: nexoraHero,
     tag: 'Product Design · SaaS CRM',
     title: 'Nexora — a CRM built for clinics and hospitals',
-    desc: 'Co-founded and designed a live SaaS CRM for clinics and hospitals — from concept to a self-serve product.',
+    desc: 'Led end-to-end product design for a live SaaS CRM for clinics and hospitals — from concept to a self-serve product.',
     link: '#/case-study/nexora',
   },
   {
@@ -93,7 +93,7 @@ const marquee = [
 const career = [
   {
     year: '2026 — Now',
-    role: 'Co-Founder & Head of Product Design',
+    role: 'Senior Product Designer (Freelance)',
     detail: 'NexoraCRM · nexoracrm.co',
   },
   {

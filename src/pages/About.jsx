@@ -5,11 +5,11 @@ import './About.css';
 
 const experience = [
   {
-    role: 'Co-Founder & Head of Product Design',
+    role: 'Senior Product Designer (Freelance)',
     company: 'NexoraCRM · nexoracrm.co',
     period: 'Jul 2026 — Present',
     points: [
-      'Co-founded and lead product design for NexoraCRM, a live multi-tenant SaaS CRM for clinics and hospitals.',
+      'Led end-to-end product design for NexoraCRM, a live multi-tenant SaaS CRM for clinics and hospitals.',
       'Designed patient records, appointment scheduling, WhatsApp booking/cancellation/reschedule notifications, and GST-ready invoicing.',
       'Designed self-serve onboarding and subscription flows with 3 pricing tiers (Razorpay + UPI Autopay).',
     ],
