@@ -20,6 +20,13 @@ const caseStudies = [
     link: '#/case-study/nexora',
   },
   {
+    img: `${import.meta.env.BASE_URL}case-studies/swiggy-household/cover.jpg`,
+    tag: 'Product Design · Concept',
+    title: 'Swiggy Household — one app for people who order together',
+    desc: 'A concept for shared carts, payment limits and food preferences, from 6 interviews to a test with 7 people.',
+    link: '#/case-study/swiggy-household',
+  },
+  {
     img: nexus,
     tag: 'Product Design · HRMS & Billing',
     title: 'Nexus — a billing & HR system rebuilt for clarity',
@@ -32,13 +39,6 @@ const caseStudies = [
     title: 'Cooper — an AI-powered decision-making platform for data teams',
     desc: 'Conceptual diagrams, wireframes and interactive prototypes for an enterprise dashboard, taken from concept through dev handoff.',
     link: '#/case-study/cooper',
-  },
-  {
-    img: `${import.meta.env.BASE_URL}case-studies/swiggy-household/cover.jpg`,
-    tag: 'Product Design · Concept',
-    title: 'Swiggy Household — one app for people who order together',
-    desc: 'A concept for shared carts, payment limits and food preferences, from 6 interviews to a test with 7 people.',
-    link: '#/case-study/swiggy-household',
   },
 ];
 
